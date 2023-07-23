@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: d721e19f35d0245ce85c83cf42784766
+guid: 70c776fe8f99a5d4f94a077b2d4b0fa5
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - BloomMat: {fileID: 2100000, guid: f164dd7351bca4742a2bc5acb4860f78, type: 2}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
