@@ -39,6 +39,10 @@ public class SingleBloomPreRenderFeature : ScriptableRendererFeature
             RenderTextureDescriptor descriptor = renderingData.cameraData.cameraTargetDescriptor;
             cmd.GetTemporaryRT(_Bloom_Tex, descriptor);
 
+            // 为了某些平台闪烁，需要清空
+            cmd.SetRenderTarget(_Bloom_Tex);
+            cmd.ClearRenderTarget(false,true,Color.black);
+
             ConfigureTarget(new RenderTargetIdentifier[] { colorAttachment, _Bloom_Tex }, depthAttachment);
         }
 
